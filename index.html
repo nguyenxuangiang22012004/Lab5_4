@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Plant Shop</h1>
+    <button onclick="showCart()">Cart</button>
+  </header>
+  <main>
+    <section id="products">
+
+    </section>
+    <p>Nguyễn Xuân Giang - 22810310138</p>
+  </main>
+  <footer>
+    <p>&copy; 2024 Plant Shop</p>
+  </footer>
+  <div id="cart" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
